@@ -22,7 +22,7 @@ export function capitalizeNames(arr) {
   });
 }
 
-export function makeStings(arr) {
+export function makeStrings(arr) {
   return arr.map(person => {
     return `${person.name} ${person.age < 18 ? 'is under age!!' : 'can go to The Matrix'}`;
   });
