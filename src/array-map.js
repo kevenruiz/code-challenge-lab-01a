@@ -17,8 +17,6 @@ export function capitalizeNames(arr) {
   return arr.map(name => {
     return name[0].toUpperCase() + name.slice(1).toLowerCase();
 
-
-
   });
 }
 

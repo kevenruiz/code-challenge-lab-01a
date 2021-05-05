@@ -1,4 +1,4 @@
-import { capitalizeNames, doubleNumbers, stringItUp, makeStrings } from './array.map';
+import { capitalizeNames, doubleNumbers, stringItUp, makeStrings } from './array-map';
 
 test('it doubles the number', () => {
   const input = [2, 5, 100];
