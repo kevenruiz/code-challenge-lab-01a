@@ -1,24 +1,24 @@
 import { fiveAndGreaterOnly, evensOnly, fiveCharactersOrFewerOnly, peopleWhoBelongToTheIlluminati, ofAge } from './array-filter';
 
-test('Five and greater only', () => {
+it.skip('Five and greater only', () => {
   const input = [3, 6, 8, 2]; // arrange
   const output = fiveAndGreaterOnly(input); // act
   expect(output).toEqual([6, 8]); // assert
 });
 
-test('evensOnly', () => {
+it.skip('evensOnly', () => {
   const input = [3, 6, 8, 2]; // arrange
   const output = evensOnly(input); // act
   expect(output).toEqual([6, 8, 2]); // assert
 });
 
-test('fiveCharactersOrFewerOnly', () => {
+it.skip('fiveCharactersOrFewerOnly', () => {
   const input = ['dog', 'wolf', 'by', 'family', 'eaten', 'camping']; // arrange
   const actual = fiveCharactersOrFewerOnly(input); // act
   expect(actual).toEqual(['dog', 'wolf', 'by', 'eaten']); // assert
 });
 
-test('peopleWhoBelongToTheIlluminati', () => {
+it.skip('peopleWhoBelongToTheIlluminati', () => {
   const input = [
     { name: 'Angelina Jolie', member: true },
     { name: 'Eric Jones', member: 0 },
@@ -35,7 +35,7 @@ test('peopleWhoBelongToTheIlluminati', () => {
 });
 
 
-test('ofAge', () => {
+it.skip('ofAge', () => {
   const input = [
     { name: 'Angelina Jolie', age: 80 },
     { name: 'Eric Jones', age: 2 },
