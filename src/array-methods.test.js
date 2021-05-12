@@ -1,4 +1,4 @@
-import { howMuchPencil, listFoods, removeLastCharacters, stepActions, wordsToCharList } from './array-methods.js';
+import { howMuchPencil, listFoods, removeLastCharacters, stepActions, wordsToCharList } from './array-method.js';
 
 test('It should return a list of shortening words', () => {
   expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
