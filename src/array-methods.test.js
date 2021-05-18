@@ -1,20 +1,20 @@
 import { howMuchPencil, listFoods, removeLastCharacters, stepActions, wordsToCharList } from './array-method.js';
 
-test('It should return a list of shortening words', () => {
+it.skip('It should return a list of shortening words', () => {
   expect(howMuchPencil('Welcome')).toStrictEqual(['Welcome', 'elcome', 'lcome', 'come', 'ome', 'me', 'e', '']);
   expect(howMuchPencil('Welcome').length).toStrictEqual(8);
   expect(howMuchPencil('')).toStrictEqual(['']);
   expect(howMuchPencil('abc')).toStrictEqual(['abc', 'bc', 'c', '']);
 });
 
-test('It should return a list characters', () => {
+it.skip('It should return a list characters', () => {
   expect(wordsToCharList('Gregor')).toStrictEqual(['G', 'r', 'e', 'g', 'o', 'r']);
   expect(wordsToCharList('Gregor').length).toStrictEqual(6);
   expect(wordsToCharList('hooray')).toStrictEqual(['h', 'o', 'o', 'r', 'a', 'y']);
   expect(wordsToCharList('')).toStrictEqual(['']);
 });
 
-test('It should return a list of foods without amounts', () => {
+it.skip('It should return a list of foods without amounts', () => {
   const gruffaloCrumble = {
     name: 'How to make a Gruffalo Crumble',
     ingredients: [
@@ -45,7 +45,7 @@ test('It should return a list of foods without amounts', () => {
   expect(listFoods(gruffaloCrumble)).toStrictEqual(['Gruffalo', 'oats', 'brown sugar', 'flour', 'pure maple syrup', 'chopped nuts', 'baking soda', 'baking powder', 'cinnamon', 'melted butter', 'fresh water']);
 });
 
-test('It should return a list actions', () => {
+it.skip('It should return a list actions', () => {
   const gruffaloCrumble = {
     name: 'How to make a Gruffalo Crumble',
     ingredients: [
@@ -76,7 +76,7 @@ test('It should return a list actions', () => {
   expect(stepActions(gruffaloCrumble)).toStrictEqual(['Pre-heat', 'De-prickle', 'Sprinkle', 'Mix', 'Grease', 'Combine', 'Fold', 'Spread', 'Bake']);
 });
 
-test('It should remove the last characters', () => {
+it.skip('It should remove the last characters', () => {
   expect(removeLastCharacters('Gregor', 2)).toStrictEqual('Greg');
   expect(removeLastCharacters('hello', -1)).toStrictEqual('hello');
   expect(removeLastCharacters('wowow', -700)).toStrictEqual('wowow');
