@@ -1,4 +1,5 @@
 const toLastNames = people => {
-  return people.map();
-
+  people.map(`${people.firstName} ${people.firstName}`);
+  return people;
 };
+
